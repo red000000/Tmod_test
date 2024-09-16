@@ -1,0 +1,23 @@
+Items: {
+	Weapon: {
+		Tooltip: ""
+		DisplayName: Weapon
+	}
+
+	NoDamageBullet: {
+		Tooltip: ""
+		DisplayName: No Damage Bullet
+	}
+}
+
+Projectiles: {
+	NoDamageProjectile.DisplayName: No Damage Projectile
+	NoDamageBulletProjectile.DisplayName: No Damage Bullet Projectile
+}
+
+Buffs: {
+	NoDamageBuff: {
+		DisplayName: No Damage Buff
+		Description: No Damage Buff
+	}
+}
