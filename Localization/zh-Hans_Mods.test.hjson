@@ -1,0 +1,23 @@
+Items: {
+	Weapon: {
+		Tooltip: ""
+		DisplayName: 枪
+	}
+
+	NoDamageBullet: {
+		Tooltip: 打中敌人会令敌人攻击为0
+		DisplayName: 米奇妙妙子弹
+	}
+}
+
+Projectiles: {
+	NoDamageProjectile.DisplayName: No Damage Projectile
+	NoDamageBulletProjectile.DisplayName: No Damage Bullet Projectile
+}
+
+Buffs: {
+	NoDamageBuff: {
+		DisplayName: 无伤害
+		Description: 你无法造成伤害了
+	}
+}
