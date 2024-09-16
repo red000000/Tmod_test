@@ -1,10 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using test.Content.Projectiles;
-namespace test.Content.Items
+namespace test.Content.Items.Guns
 {
-    public class Weapon : ModItem
+    public class TestWeapon : ModItem
     {
         public override void SetDefaults()
         {
@@ -17,8 +16,8 @@ namespace test.Content.Items
             Item.useStyle = ItemUseStyleID.Shoot; // 使用 Shoot 样式
             Item.noMelee = true;
             Item.shootSpeed = 16f; // 子弹速度
-            Item.shoot = ModContent.ProjectileType<Projectiles.NoDamageBulletProjectile>();
-            Item.useAmmo = AmmoID.Bullet; // 使用子弹作为弹药
+            Item.shoot = ModContent.ProjectileType<test.Content.Projectiles.TestProjectile>(); // 发射特定的发射物
+            Item.useAmmo = ModContent.ItemType<test.Content.Items.Bullets.TestBullet>(); // 使用特定子弹作为弹药
             Item.value = Item.sellPrice(gold: 1);
             Item.rare = ItemRarityID.Orange;
         }

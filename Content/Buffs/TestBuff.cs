@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace test.Content.Buffs
 {
-    public class NoDamageBuff : ModBuff
+    public class TestBuff : ModBuff
     {
         public override void SetStaticDefaults()
         {

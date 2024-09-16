@@ -1,14 +1,13 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-
-namespace test.Content.Items
+namespace test.Content.Items.Bullets
 {
-    public class NoDamageBullet : ModItem
+    public class TestBullet : ModItem
     {
         public override void SetDefaults()
         {
-            Item.ammo = AmmoID.Bullet; // 子弹类型
+            Item.ammo = ModContent.ItemType<TestBullet>(); // 子弹类型
             Item.useAnimation = 10; // 子弹使用动画时间
             Item.useTime = 10; // 子弹使用间隔时间
             Item.knockBack = 1f; // 子弹击退力
@@ -23,10 +22,11 @@ namespace test.Content.Items
 
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
+            Recipe recipe = CreateRecipe(50);   // 创建一个可以合成 50 个子弹的配方
             recipe.AddIngredient(ItemID.DirtBlock, 1); // 使用 1 个泥土块作为合成材料
             recipe.AddTile(TileID.WorkBenches); // 使用工作台作为合成台
             recipe.Register(); // 注册配方
         }
+
     }
 }

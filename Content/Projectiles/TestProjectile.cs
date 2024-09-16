@@ -2,10 +2,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using test.Content.Buffs;
 namespace test.Content.Projectiles
 {
-    public class NoDamageBulletProjectile : ModProjectile
+    public class TestProjectile : ModProjectile
     {
         public override void SetDefaults()
         {
@@ -40,7 +39,7 @@ namespace test.Content.Projectiles
         {
 
             // 应用 debuff
-            target.AddBuff(ModContent.BuffType<test.Content.Buffs.NoDamageBuff>(), 300);
+            target.AddBuff(ModContent.BuffType<test.Content.Buffs.TestBuff>(), 10);
         }
     }
 }

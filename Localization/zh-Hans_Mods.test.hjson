@@ -1,22 +1,19 @@
 Items: {
-	Weapon: {
+	TestBullet: {
+		DisplayName: 测试弹药
 		Tooltip: ""
-		DisplayName: 枪
 	}
 
-	NoDamageBullet: {
-		Tooltip: 打中敌人会令敌人攻击为0
-		DisplayName: 米奇妙妙子弹
+	TestWeapon: {
+		DisplayName: 测试枪
+		Tooltip: ""
 	}
 }
 
-Projectiles: {
-	NoDamageProjectile.DisplayName: No Damage Projectile
-	NoDamageBulletProjectile.DisplayName: No Damage Bullet Projectile
-}
+Projectiles.TestProjectile.DisplayName: 测试发射物
 
 Buffs: {
-	NoDamageBuff: {
+	TestBuff: {
 		DisplayName: 无伤害
 		Description: 你无法造成伤害了
 	}

@@ -1,23 +1,20 @@
 Items: {
-	Weapon: {
+	TestBullet: {
+		DisplayName: Test Bullet
 		Tooltip: ""
-		DisplayName: Weapon
 	}
 
-	NoDamageBullet: {
+	TestWeapon: {
+		DisplayName: Test Weapon
 		Tooltip: ""
-		DisplayName: No Damage Bullet
 	}
 }
 
-Projectiles: {
-	NoDamageProjectile.DisplayName: No Damage Projectile
-	NoDamageBulletProjectile.DisplayName: No Damage Bullet Projectile
-}
+Projectiles.TestProjectile.DisplayName: Test Projectile
 
 Buffs: {
-	NoDamageBuff: {
-		DisplayName: No Damage Buff
-		Description: No Damage Buff
+	TestBuff: {
+		DisplayName: Test Buff
+		Description: Mods.test.Buffs.TestBuff.Description
 	}
 }
